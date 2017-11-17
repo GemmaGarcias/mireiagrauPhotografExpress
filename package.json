@@ -1,0 +1,22 @@
+{
+  "name": "webphotograf_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.13.2",
+    "node-sass": "^4.6.1",
+    "nodemon": "^1.12.1"
+  }
+}
