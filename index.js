@@ -7,7 +7,6 @@ mongoose.Promise = global.Promise
 
 require('dotenv').load()
 
-
 const routes = require('./routes')
 const app = express()
 
@@ -22,5 +21,5 @@ app.use(bodyParser.json())
 
 app.use(routes)
 
-app.listen(process.env.PORT)
+app.listen(3001)//process.env.PORT
 console.log('Listening on PORT 3001...');
