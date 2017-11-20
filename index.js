@@ -21,5 +21,5 @@ app.use(bodyParser.json())
 
 app.use(routes)
 
-app.listen(3001)//process.env.PORT
+app.listen(process.env.PORT)
 console.log('Listening on PORT 3001...');
