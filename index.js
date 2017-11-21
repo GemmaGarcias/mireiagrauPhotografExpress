@@ -13,7 +13,7 @@ const app = express()
 app.use(cors())
 app.use(express.static('public'))
 
-const DB_URL = process.env.DB_URL
+const DB_URL = process.env
 mongoose.connect(DB_URL, { useMongoClient: true })
 
 app.use(bodyParser.urlencoded({ extended: false }))
