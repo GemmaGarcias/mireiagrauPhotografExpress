@@ -2,7 +2,9 @@ const Session = require('../../models/Session')
 
 function putImages (req, res) {
 	const {name, url} = req.body
+	console.log(req.body)
 	const {id} = req.params
+	console.log(id)
 	const date = new Date()
   Session.findByIdAndUpdate(id, {
   	$addToSet:{'img':{name, url}}, 

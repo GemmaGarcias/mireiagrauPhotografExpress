@@ -15,6 +15,5 @@ router.get('/gallery/:id', getSessionById)
 router.put('/gallery/newimages/:id', putImages)
 router.delete('/session/:id', removeSessionById)
 
-//router.get('/gallery/:gallery', getSessionsCommercial)
 
 module.exports = router
