@@ -2,7 +2,7 @@ const Session = require('../../models/Session')
 
 function getSessions (req, res) {
   Session.find()
-    .then( Session => res.json(Session))
+    .then( session => res.json(session))
 }
 
 module.exports = getSessions

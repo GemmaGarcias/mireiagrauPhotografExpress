@@ -1,13 +1,13 @@
 const Session = require('../../models/Session')
 
 function putImages (req, res) {
-	const {name, url} = req.body
+	const {imageLink, name} = req.body
 	console.log(req.body)
 	const {id} = req.params
 	console.log(id)
 	const date = new Date()
   Session.findByIdAndUpdate(id, {
-  	$addToSet:{'img':{name, url}}, 
+  	$addToSet:{'img':{name:name, url:imageLink}}, 
     $set: {date}},
     { new: true })
   	.then(img => { res.json({ img, msg: 'friend added properly!' }) })

@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 
 mongoose.Promise = global.Promise
+global.__base=__dirname
 
 require('dotenv').load()
 
@@ -12,6 +13,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.static('public'))
+
 
 const DB_URL = process.env.DB_URL
 mongoose.connect(DB_URL, { useMongoClient: true })
