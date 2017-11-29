@@ -2,7 +2,6 @@ const Session = require('../../models/Session')
 
 function putImages (req, res) {
 	const {imageLink, name} = req.body
-	console.log(req.body)
 	const {id} = req.params
 	console.log(id)
 	const date = new Date()

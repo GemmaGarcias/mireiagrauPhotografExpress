@@ -32,9 +32,12 @@ router.post('/upload', upload.single('file'), uploadCloudinary, (req, res) => {
 // -----------------MESSAGE API
 
 const addMessage = require('./handlersMessage/addMessage')
+const deleteMessage =require('./handlersMessage/deleteMessage')
+
 const getMessages =require('./handlersMessage/getMessages')
 
 router.post('/newmessage', addMessage)
+router.delete('/deletemessage/:id', deleteMessage)
 
 router.get('/getmessages', getMessages)
 
