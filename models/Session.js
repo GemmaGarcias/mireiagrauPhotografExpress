@@ -6,7 +6,7 @@ const SessionSchema = new Schema({
     detail: String,
     img:[{url: String, name: String}],
     gallery: String,
-    date: String
+    date: {type: Date, default: Date.now}
 })
 
 module.exports = mongoose.model('Session', SessionSchema)
